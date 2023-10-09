@@ -1,7 +1,7 @@
-(ns simple-app.events
+(ns clojure-exposure.events
   (:require
    [re-frame.core :as re-frame]
-   [simple-app.db :as db]
+   [clojure-exposure.db :as db]
    ))
 
 (re-frame/reg-event-db

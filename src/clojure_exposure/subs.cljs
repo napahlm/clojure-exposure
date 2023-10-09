@@ -1,4 +1,4 @@
-(ns simple-app.subs
+(ns clojure-exposure.subs
   (:require
    [re-frame.core :as re-frame]))
 

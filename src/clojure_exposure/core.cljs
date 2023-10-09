@@ -1,11 +1,11 @@
-(ns simple-app.core
+(ns clojure-exposure.core
   (:require
    [reagent.dom :as rdom]
    [re-frame.core :as re-frame]
-   [simple-app.events :as events]
-   [simple-app.routes :as routes]
-   [simple-app.views :as views]
-   [simple-app.config :as config]
+   [clojure-exposure.events :as events]
+   [clojure-exposure.routes :as routes]
+   [clojure-exposure.views :as views]
+   [clojure-exposure.config :as config]
    ))
 
 

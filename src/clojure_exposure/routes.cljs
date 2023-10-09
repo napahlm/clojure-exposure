@@ -1,9 +1,9 @@
-(ns simple-app.routes
+(ns clojure-exposure.routes
   (:require
    [bidi.bidi :as bidi]
    [pushy.core :as pushy]
    [re-frame.core :as re-frame]
-   [simple-app.events :as events]))
+   [clojure-exposure.events :as events]))
 
 (defmulti panels identity)
 (defmethod panels :default [] [:div "No panel found for this route."])

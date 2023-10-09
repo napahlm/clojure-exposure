@@ -1,4 +1,4 @@
-(ns simple-app.db)
+(ns clojure-exposure.db)
 
 (def default-db
   {:name "re-frame"

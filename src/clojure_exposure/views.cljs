@@ -1,9 +1,9 @@
-(ns simple-app.views
+(ns clojure-exposure.views
   (:require
    [re-frame.core :as re-frame]
-   [simple-app.events :as events]
-   [simple-app.routes :as routes]
-   [simple-app.subs :as subs]
+   [clojure-exposure.events :as events]
+   [clojure-exposure.routes :as routes]
+   [clojure-exposure.subs :as subs]
    [reagent.core :as r] ; for clicker
    ))
 
