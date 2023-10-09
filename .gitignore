@@ -5,6 +5,7 @@
 /classes/
 /target/
 /checkouts/
+/resources/public/js/compiled/
 
 # visual code
 /*.vsix

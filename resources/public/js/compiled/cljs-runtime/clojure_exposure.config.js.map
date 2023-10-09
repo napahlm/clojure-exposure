@@ -1,1 +1,0 @@
-{"version":3,"sources":["clojure_exposure/config.cljs"],"mappings":";AAEA,AAAKA,uCACMC","names":["clojure-exposure.config/debug?","js/goog.DEBUG"],"sourcesContent":["(ns clojure-exposure.config)\r\n\r\n(def debug?\r\n  ^boolean goog.DEBUG)\r\n"]}
