@@ -105,9 +105,26 @@
 
 ; --- Data page
 
+(defn highchart-container []
+  (r/create-class
+   {:component-did-mount
+    (fn [this]
+      (js/Highcharts.chart "container"
+                           (clj->js {:chart {:type "bar"}
+                                     :title {:text "Fruit Consumption"}
+                                     :xAxis {:categories ["Apples" "Bananas" "Oranges"]}
+                                     :yAxis {:title {:text "Fruit eaten"}}
+                                     :series [{:name "Jane" :data [1 0 5]}
+                                              {:name "John" :data [5 7 3]}]})))
+    :reagent-render
+    (fn []
+      [:div {:id "container" :style {:width "50%" :height "400px"}}])}))
+
+
 (defn data-panel []
   [:div
-   [:h1 "Dummy data"]])
+   [:h1 "Dummy data"]
+   [highchart-container]])
 
 (defmethod routes/panels :data-panel [] [data-panel])
 
