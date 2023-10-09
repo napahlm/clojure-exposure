@@ -11,7 +11,6 @@
 
 
 
-
 ; other
 
 (def click-count (r/atom 0))
@@ -57,9 +56,11 @@
                 :on-change #(re-frame/dispatch [:set-selected-radio option])}]
               option])])))
 
-; ---------- Pages -------------------------
+; ===========================
+; ---------- PAGES ----------
+; ===========================
 
-; Navigation bar
+; --- Navigation bar
 
 (defn nav-link [panel label]
   [:a {:href "#"
@@ -78,20 +79,20 @@
      [nav-link :test  "Test"]]
     ]])
 
-; Home page
+; --- Home page
 
 (defn home-panel []
   (let [name (re-frame/subscribe [::subs/name])]
     [:div
      [:h1
-      (str "This is a " @name " web page.")]
+      (str "Web app enabled by " @name ".")]
      [:div
       "Check out the navbar to look at different implementations."]
      ]))
 
 (defmethod routes/panels :home-panel [] [home-panel])
 
-; About page
+; --- About page
 
 (defn about-panel []
   [:div
@@ -102,7 +103,7 @@
 
 (defmethod routes/panels :about-panel [] [about-panel])
 
-; Data page
+; --- Data page
 
 (defn data-panel []
   [:div
@@ -110,7 +111,7 @@
 
 (defmethod routes/panels :data-panel [] [data-panel])
 
-; Test page
+; --- Test page
 
 (defn test-panel []
   (let [name (re-frame/subscribe [::subs/name])]
@@ -122,7 +123,9 @@
 
 (defmethod routes/panels :test-panel [] [test-panel])
 
-; ----------- Main panel ------------------
+; ================================
+; ---------- Main panel ----------
+; ================================
 
 (defn main-panel []
   (let [active-panel (re-frame/subscribe [::subs/active-panel])]

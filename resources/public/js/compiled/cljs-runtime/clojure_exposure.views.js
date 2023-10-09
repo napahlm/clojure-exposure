@@ -16,8 +16,8 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 });
 });
 clojure_exposure.views.atom_input = (function clojure_exposure$views$atom_input(value){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.deref(value),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__14982_SHARP_){
-return cljs.core.reset_BANG_(value,p1__14982_SHARP_.target.value);
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.deref(value),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__18267_SHARP_){
+return cljs.core.reset_BANG_(value,p1__18267_SHARP_.target.value);
 })], null)], null);
 });
 clojure_exposure.views.shared_state = (function clojure_exposure$views$shared_state(){
@@ -29,29 +29,29 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 clojure_exposure.views.radio_list = (function clojure_exposure$views$radio_list(){
 var selected_radio = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"selected-radio","selected-radio",-1432612446)], null));
 return (function (){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var iter__5523__auto__ = (function clojure_exposure$views$radio_list_$_iter__14983(s__14984){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var iter__5523__auto__ = (function clojure_exposure$views$radio_list_$_iter__18268(s__18269){
 return (new cljs.core.LazySeq(null,(function (){
-var s__14984__$1 = s__14984;
+var s__18269__$1 = s__18269;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__14984__$1);
+var temp__5804__auto__ = cljs.core.seq(s__18269__$1);
 if(temp__5804__auto__){
-var s__14984__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__14984__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__14984__$2);
+var s__18269__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__18269__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__18269__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__14986 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__14985 = (0);
+var b__18271 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__18270 = (0);
 while(true){
-if((i__14985 < size__5522__auto__)){
-var option = cljs.core._nth(c__5521__auto__,i__14985);
-cljs.core.chunk_append(b__14986,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),option], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"radio",new cljs.core.Keyword(null,"name","name",1843675177),"options",new cljs.core.Keyword(null,"value","value",305978217),option,new cljs.core.Keyword(null,"checked","checked",-50955819),cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(selected_radio),option),new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (i__14985,option,c__5521__auto__,size__5522__auto__,b__14986,s__14984__$2,temp__5804__auto__,selected_radio){
+if((i__18270 < size__5522__auto__)){
+var option = cljs.core._nth(c__5521__auto__,i__18270);
+cljs.core.chunk_append(b__18271,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),option], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"radio",new cljs.core.Keyword(null,"name","name",1843675177),"options",new cljs.core.Keyword(null,"value","value",305978217),option,new cljs.core.Keyword(null,"checked","checked",-50955819),cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(selected_radio),option),new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (i__18270,option,c__5521__auto__,size__5522__auto__,b__18271,s__18269__$2,temp__5804__auto__,selected_radio){
 return (function (){
 return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"set-selected-radio","set-selected-radio",-1309808609),option], null));
-});})(i__14985,option,c__5521__auto__,size__5522__auto__,b__14986,s__14984__$2,temp__5804__auto__,selected_radio))
+});})(i__18270,option,c__5521__auto__,size__5522__auto__,b__18271,s__18269__$2,temp__5804__auto__,selected_radio))
 ], null)], null),option], null));
 
-var G__14987 = (i__14985 + (1));
-i__14985 = G__14987;
+var G__18272 = (i__18270 + (1));
+i__18270 = G__18272;
 continue;
 } else {
 return true;
@@ -59,17 +59,17 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__14986),clojure_exposure$views$radio_list_$_iter__14983(cljs.core.chunk_rest(s__14984__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__18271),clojure_exposure$views$radio_list_$_iter__18268(cljs.core.chunk_rest(s__18269__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__14986),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__18271),null);
 }
 } else {
-var option = cljs.core.first(s__14984__$2);
-return cljs.core.cons(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),option], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"radio",new cljs.core.Keyword(null,"name","name",1843675177),"options",new cljs.core.Keyword(null,"value","value",305978217),option,new cljs.core.Keyword(null,"checked","checked",-50955819),cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(selected_radio),option),new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (option,s__14984__$2,temp__5804__auto__,selected_radio){
+var option = cljs.core.first(s__18269__$2);
+return cljs.core.cons(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),option], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"radio",new cljs.core.Keyword(null,"name","name",1843675177),"options",new cljs.core.Keyword(null,"value","value",305978217),option,new cljs.core.Keyword(null,"checked","checked",-50955819),cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(selected_radio),option),new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (option,s__18269__$2,temp__5804__auto__,selected_radio){
 return (function (){
 return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"set-selected-radio","set-selected-radio",-1309808609),option], null));
-});})(option,s__14984__$2,temp__5804__auto__,selected_radio))
-], null)], null),option], null),clojure_exposure$views$radio_list_$_iter__14983(cljs.core.rest(s__14984__$2)));
+});})(option,s__18269__$2,temp__5804__auto__,selected_radio))
+], null)], null),option], null),clojure_exposure$views$radio_list_$_iter__18268(cljs.core.rest(s__18269__$2)));
 }
 } else {
 return null;
@@ -94,7 +94,7 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 });
 clojure_exposure.views.home_panel = (function clojure_exposure$views$home_panel(){
 var name = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("clojure-exposure.subs","name","clojure-exposure.subs/name",904439744)], null));
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1","h1",-1896887462),["This is a ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(name))," web page."].join('')], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),"Check out the navbar to look at different implementations."], null)], null);
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1","h1",-1896887462),["Web app enabled by ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(name)),"."].join('')], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),"Check out the navbar to look at different implementations."], null)], null);
 });
 clojure_exposure.routes.panels.cljs$core$IMultiFn$_add_method$arity$3(null,new cljs.core.Keyword(null,"home-panel","home-panel",1226198754),(function (){
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [clojure_exposure.views.home_panel], null);
