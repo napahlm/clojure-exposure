@@ -1,0 +1,1 @@
+{"version":3,"sources":["simple_app/config.cljs"],"mappings":";AAEA,AAAKA,iCACMC","names":["simple-app.config/debug?","js/goog.DEBUG"],"sourcesContent":["(ns simple-app.config)\r\n\r\n(def debug?\r\n  ^boolean goog.DEBUG)\r\n"]}

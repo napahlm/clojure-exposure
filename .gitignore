@@ -1,0 +1,95 @@
+# standard gitignore files for clojure
+*.jar
+*.class
+/lib/
+/classes/
+/target/
+/checkouts/
+
+# visual code
+/*.vsix
+# .vscode/settings.json
+.vscode-test
+.lh
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+#Macos
+.DS_Store
+
+## CLJS
+.shadow-cljs/
+lib/
+cljs-out/
+test-out/
+
+# This and that
+.nrepl-port
+dist/
+pom.xml
+pom.xml.asc
+.idea
+*.iml
+*.bak
+
+## TS
+out/
+html/main.js
+tsconfig.tsbuildinfo
+html/main.js.map
+
+# Test reporter
+junit/test-results.xml
+
+# Don't know what this is
+report.*
+
+# clojure-lsp
+.lsp
+output.calva-repl
+.clj-kondo
+/clojure-lsp*
+
+# MkDocs
+/site/
+.cache/
+
+# Calva dev
+clojure.tmLanguage.json
+.cpcache/
+backup/
+
+# Calva grammars (running the atom-ci docker image locally)
+src/calva-fmt/atom-language-clojure/.cache/
+src/calva-fmt/atom-language-clojure/.bash_history
+
+# Leiningen
+.lein-repl-history
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+
+# Portal
+.portal
